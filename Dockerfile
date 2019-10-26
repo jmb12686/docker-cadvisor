@@ -30,6 +30,7 @@ LABEL maintainer="John Belisle" \
   org.label-schema.vendor="jmb12686" \
   org.label-schema.schema-version="1.0" \
   org.label-schema.docker.cmd="sudo docker run \
+  --volume=/var/run/docker.sock:/var/run/docker.sock:ro \
   --volume=/:/rootfs:ro \
   --volume=/var/run:/var/run:ro \
   --volume=/sys:/sys:ro \
