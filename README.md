@@ -6,7 +6,7 @@
   <a href="https://hub.docker.com/r/jmb12686/cadvisor/"><img src="https://img.shields.io/docker/pulls/jmb12686/cadvisor.svg?style=flat-square" alt="Docker Pulls"></a>
 </p>
 
-Containerized, multiarch version of cadvisor.  Multi-stage build is used to build from official [cadvisor source code](github.com/google/cadvisor).  Designed to be usable within x86-64, armv6, and armv7 based Docker Swarm clusters.  Designed to be compatible with all Raspberry Pi models (armv6 + armv7).
+Containerized, multiarch version of cadvisor.  Multi-stage build is used to build from official [cadvisor source code](https://github.com/google/cadvisor).  Designed to be usable within x86-64, armv6, and armv7 based Docker Swarm clusters.  Designed to be compatible with all Raspberry Pi models (armv6 + armv7).
 
 ## Usage
 
