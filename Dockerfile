@@ -7,8 +7,8 @@ RUN apk update && apk add --no-cache git && \
     apk add --no-cache gcc && \
     apk add --no-cache libc-dev 
 
- 
-RUN go get -d github.com/google/cadvisor
+RUN mkdir -p $GOPATH/src/github.com/google/cadvisor && \
+    git clone --branch v0.35.0 --depth 1 https://github.com/google/cadvisor.git $GOPATH/src/github.com/google/cadvisor
 WORKDIR $GOPATH/src/github.com/google/cadvisor
 RUN make build
 
