@@ -28,8 +28,9 @@ jobs:
           echo ::set-output name=docker_image::jmb12686/cadvisor
       -
         # https://github.com/crazy-max/ghaction-docker-buildx
+        # sha = https://github.com/crazy-max/ghaction-docker-buildx/releases/tag/v1.0.4
         name: Set up Docker Buildx
-        uses: crazy-max/ghaction-docker-buildx@v1
+        uses: crazy-max/ghaction-docker-buildx@e193644d92840c3a0d2a80093feff3a0d8d64e7e
         with:
           version: latest
       -
